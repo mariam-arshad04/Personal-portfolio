@@ -1,0 +1,455 @@
+*{
+    margin: 0;
+    font-family: 'Arvo', serif;
+    scroll-behavior: smooth;
+}
+/* for moving lines */
+.lines{
+    width: 40%;
+	animation: lines 4s;
+}
+@keyframes lines{ 
+	0%{
+		width: 0%;
+	}
+
+	100%{
+		width: 40%;
+	}
+}
+
+/* for navbar */
+.navbar{
+    background-color: #006666;
+    height: 80px;
+}
+.navbar a{
+    color: #b2d8d8;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: large;
+    padding: 20px;
+    transition: 0.3s ease;
+}
+.navbar .logo{
+    float: left;
+}
+.navbar .list{
+    float: right;
+    padding-top: 28px;
+} 
+.navbar img{
+    width: 89px;
+    height: 80px;
+    padding-left: 40px;
+}
+nav a:hover{
+    color: #006666;
+    background-color: #b2d8d8;
+}
+/* for intro */
+body{
+    margin: 0px;
+    padding: 0px;
+    background-color: #dbffffcb;
+}
+.homebg img{
+    width: 400px;
+    height: 400px;
+    object-fit: contain;
+}
+.homebg{
+    padding: 90px;
+    padding-left: 100px;
+}
+.content{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 4rem;
+    
+}   
+.maintext{
+    width: 700px;
+    font-family: 'Arvo', serif;
+    /* color: #006666; */
+    text-align: center;
+}
+.maintext .hellotext{
+    width: 450px;
+    text-align: justify;
+
+}
+.maintext .hellotext h1{
+    text-align: center;
+}
+/* for about section */
+.aboutimg{
+    width: 400px;
+}
+.about{
+    display: flex;
+    justify-content: center;
+    flex-direction: row-reverse;
+    flex-wrap: wrap;
+    align-items: center;
+    padding-right: 60px;
+    /* gap: 2rem; */
+}
+.abouttext{
+    width: 800px;
+    font-family: 'Arvo', serif;
+    color: #006666;
+    /* text-align: center; */
+}
+.abouttext .abouttextme{
+    width: 700px;
+    text-align: justify;
+}
+.aboutimg img{
+    border-radius: 20%;
+    height: 370px;
+    width: 330px;
+    padding-top: 40px;
+}
+
+/* for skills section */
+.fullskills{
+    display: flex;
+    flex-direction: row-reverse;
+}
+h1{ 
+	font-family: 'Arvo', serif;
+}
+
+li{ 
+	list-style-type: none;
+	font-family: 'Arvo', serif;
+}
+
+.skills{ 
+	width: 750px;
+	margin: 20px 105px;
+}
+
+.fullskills .skillsimg{
+    width: 450px ;
+    height: 450px;
+    padding-top: 70px;
+}
+.fullskills .skillsimg img{
+    width: 400px;
+    height:400px;
+    padding-left: 100px;
+}
+.skills li{ 
+	margin: 40px 90px;
+}
+
+.bar{ 
+	background-color:#006666;
+	display: block;
+	height: 4px;
+	border: 3px solid rgba(0,0,0,0.3);
+	border-radius: 3px;
+	overflow: hidden;
+	box-shadow: 0 0 10px #2187e7b3;
+}
+
+.bar span{ 
+	height: 2px;
+	float: left;
+	background-color:#b2d8d8;
+}
+
+.html{ 
+	width: 70%;
+	animation: html 4s;
+}
+
+.css{ 
+	width: 70%;
+	animation: css 4s;
+}
+
+.python{ 
+	width: 80%;
+	animation: python 4s;
+}
+
+.Cplusplus{ 
+	width: 75%;
+	animation: Cplusplus 4s;
+}
+
+.diagrams{ 
+	width: 90%;
+	animation: Cplusplus 4s;
+}
+
+@keyframes html{ 
+	0%{
+		width: 0%;
+	}
+
+	100%{
+		width: 70%;
+	}
+}
+
+@keyframes css{ 
+	0%{
+		width: 0%;
+	}
+
+	100%{
+		width: 70%;
+	}
+}
+
+@keyframes python{ 
+	0%{
+		width: 0%;
+	}
+
+	100%{
+		width: 85%;
+	}
+}
+
+@keyframes Cplusplus{ 
+	0%{
+		width: 0%;
+	}
+
+	100%{
+		width: 65%;
+	}
+}
+
+@keyframes diagrams{ 
+	0%{
+		width: 0%;
+	}
+
+	100%{
+		width: 90%;
+	}
+}
+/* for projects section */
+.projects{
+    font-family: 'Arvo', serif;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+    padding-top: 30px;
+}
+.projects .prjheading{
+    padding-left: 120px;
+}
+.projects .boxes{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 3rem;
+    padding-top: 20px;
+}
+.projects .prj1{
+    height: 320px;
+    width: 320px;
+    background-color: #006666;
+    padding: 15px;
+    transition: 0.5s;
+}
+.projects .prj2{
+    height: 320px;
+    width: 320px;
+    background-color:#b2d8d8;
+    padding: 15px;
+    transition: 0.5s;
+}
+.projects .prj3{
+    height: 320px;
+    width: 320px;
+    background-color: #006666;
+    padding: 15px;
+    transition: 0.5s;
+}
+.projects .prj1:hover{
+    transform: translateY(-15px);
+    box-shadow: 0 40px 60px rgba(0, 0, 0, 0.5);
+}
+.projects .prj2:hover{
+    transform: translateY(-15px);
+    box-shadow: 0 40px 60px rgba(0, 0, 0, 0.5);
+}
+.projects .prj3:hover{
+    transform: translateY(-15px);
+    box-shadow: 0 40px 60px rgba(0, 0, 0, 0.5);
+}
+/* for resume section */
+.button{
+    padding-top: 10px;
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+    /* display: grid;
+    place-items: center; */
+    /* margin: auto;
+    display: block; */
+}
+.resume .button .design{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+.button .design{
+    background-color:#006666;
+    /* border-radius: 15%; */
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+    height: 70px;
+    width: 200px;
+    border: 0;
+    transition: 0.5s ease;
+}
+/* .button:hover .design{
+    background-color:#b2d8d8;
+} */
+.button .design:hover{
+    transform: translateY(10px);
+    box-shadow: 0 40px 60px rgba(0, 0, 0, 0.5);
+}
+/* for contact section */
+.contactsec .infosec{
+    font-family: 'Arvo', serif;
+    display: flex;
+    flex-direction: column;
+    width: 200px;
+    padding-top: 30px;
+    padding-left: 180px;
+}
+.contactsec .infosec .address, 
+.contactsec .infosec .phone,
+.contactsec .infosec .email{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 10px;
+    padding-bottom: 20px;
+}
+.contactsec{
+    display:flex;
+    gap: 5rem;
+    font-family: 'Arvo', serif;
+}
+.contactsec .msgsec .msgmytext{
+    padding-top: 40px;
+}
+.maincontactsec .contactsec .msgsec .inputboxes{
+    font-family: 'Arvo', serif;
+    display: flex;
+    flex-direction: column;
+    height: 90px;
+    width: 120px;
+}
+.contactsec .msgsec .inputboxes{
+    margin-top: 20px;
+}
+.contactsec .msgsec .inputboxes .box1 input,
+.contactsec .msgsec .inputboxes .box2 input,
+.contactsec .msgsec .inputboxes .box3 textarea{
+    width: 90%;
+    padding: 15px;
+    background-color: white;
+    margin-bottom: 10px;
+    border: none;
+    border-bottom: 1px solid #006666;
+}
+/* .contactsec .msgsec .inputboxes .submitbutton{
+
+} */
+input[type=submit]{
+    background-color: #006666;
+    border: none;
+    color: #b2d8d8;
+    text-decoration: none;
+    padding: 10px 28px;
+    font-size:large;
+    transition: 0.5s ease;
+}
+input[type=submit]:hover{
+    transform: translateX(5px);
+    box-shadow: 0 40px 60px rgba(0, 0, 0, 0.5);
+}
+/* for footer */
+footer{
+    background-color: #006666;
+    margin-top: 70px;
+    padding-bottom: 50px;
+}
+.footercontainer{
+    width: 100%;
+    padding:40px 20px 20px 20px;
+}
+.socialicons{
+    display: flex;
+    justify-content: center ;
+}
+.socialicons a{
+    text-decoration: none;
+    padding: 10px;
+    background-color:#006666;
+    margin: 10px;
+    /* border-radius: 50%; */
+}
+.socialicons a i{
+    font-size: 2em;
+    color: #b2d8d8;
+    opacity: 0.9;
+}
+.socialicons a:hover{
+    background-color:#b2d8d8;
+    transition: 0.5s;
+}
+.socialicons a:hover i{
+    color:#006666;
+    transition: 0.5s;
+}
+.footernav{
+    margin: 30px 0;
+    text-align: center;
+}
+
+.footernav .footernavlist a{
+    color: #b2d8d8;
+    margin: 20px;
+    text-decoration: none;
+    font-size: 1.3em;
+    opacity: 0.7;
+    transition: 0.5 s;
+}
+.footernav .footernavlist a:hover{
+    opacity: 1;
+}
+.footerbottom{
+    background-color: #006666;
+    padding: 20px;
+    text-align: center;
+}
+.footerbottom p{
+    color: #b2d8d8;
+}
+.Designer{
+    opacity: 0.7;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 400;
+    margin: 0px 5px;    
+}
+
